@@ -1,5 +1,5 @@
 serverDetails ={
     frontEndUrl : 'https://belugulashushanth.github.io/EmployeeManagementSystem', 
-    backEndUrl : 'http://localhost:8080',
+    backEndUrl : 'https://employee-management-system-v1.herokuapp.com',
     enabled : true
 }
