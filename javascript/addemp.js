@@ -2,15 +2,21 @@ var isLoggedIn = sessionStorage.getItem('isLoggedIn');
 var containerid = document.getElementById('containerid');
 var loadingGifId = document.getElementById('loadingGifId');
 var servererror = document.getElementById('servererror');
+var backEndUrl, frontEndUrl;
+    if(serverDetails.enabled){
+        backEndUrl = serverDetails.backEndUrl;
+        frontEndUrl = serverDetails.frontEndUrl;
+    }
 window.onload = (e) => {
 
+
     if (!(isLoggedIn == "true")) {
-        window.location = "http://127.0.0.1:5500/sessionExpired.html";
+        window.location = frontEndUrl+"/sessionExpired.html";
     }
     else {
         var managerImage = document.getElementById('managerImage');
         var mIdTemp = sessionStorage.getItem('managerId');
-        managerImage.src = "http://localhost:8080/manager/getManagerImageById?managerId=" + mIdTemp;
+        managerImage.src = backEndUrl+"/manager/getManagerImageById?managerId=" + mIdTemp;
         var empFormSubmit = document.getElementById('empFormSubmit');
         empFormSubmit.addEventListener('submit', function (e) {
             e.preventDefault();
@@ -74,7 +80,7 @@ window.onload = (e) => {
                 })
 
             async function addEmployee(managerId) {
-                const response = await fetch("http://localhost:8080/employee/addEmployee/" + managerId, {
+                const response = await fetch(backEndUrl+"/employee/addEmployee/" + managerId, {
                     method: 'POST',
                     body: JSON.stringify(
                         {
@@ -101,7 +107,7 @@ window.onload = (e) => {
             }
 
             async function addEmployeeImage(employeeId) {
-                const response = await fetch("http://localhost:8080/employee/addEmployeeImageById/" + employeeId, {
+                const response = await fetch(backEndUrl+"/employee/addEmployeeImageById/" + employeeId, {
                     method: 'POST',
                     body: formdata
                 })

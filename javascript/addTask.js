@@ -2,6 +2,11 @@ var addTaskForm = document.getElementById('addTaskForm');
 var containerid = document.getElementById('containerId');
 var loadingGifId = document.getElementById('loadingGifId');
 var servererror = document.getElementById('servererrorId');
+var backEndUrl, frontEndUrl;
+    if(serverDetails.enabled){
+        backEndUrl = serverDetails.backEndUrl;
+        frontEndUrl = serverDetails.frontEndUrl;
+    }
 addTaskForm.addEventListener('submit', (e) => {
     e.preventDefault();
     containerid.classList.add('hide');
@@ -55,7 +60,7 @@ addTaskForm.addEventListener('submit', (e) => {
 
 
     async function addTask(employeeId) {
-        const response = await fetch("http://localhost:8080/task/addTask/" + employeeId, {
+        const response = await fetch(backEndUrl+"/task/addTask/" + employeeId, {
             method: 'POST',
             body: JSON.stringify(
                 {
