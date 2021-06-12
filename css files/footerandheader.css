@@ -1,0 +1,13 @@
+#npagename{
+    color: white;
+    display: block;
+    float: left;
+    font-size: x-large;
+}
+.text-center{
+        background-color: #343a40;
+        color: white;
+}
+.nav-item:hover{
+    border-bottom: 2px solid white;
+}

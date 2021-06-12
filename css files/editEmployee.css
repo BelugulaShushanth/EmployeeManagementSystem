@@ -1,0 +1,183 @@
+div.container{
+    background-color: aliceblue;
+    width: auto;
+    height: 100%;
+    border: 1px solid black;
+    padding: 15px 0px 10px 80px;
+    margin-bottom: 25px;
+   
+
+    -webkit-box-shadow: 5px 0px 14px 0px rgba(52, 50, 50, 0.75);
+    -moz-box-shadow:    5px 0px 14px 0px rgba(52, 50, 50, 0.75);
+    box-shadow:         5px 0px 14px 0px rgba(52, 50, 50, 0.75);
+
+ }
+select{
+   font-size: 16px;
+   padding-right: 80px;
+}
+ .empform{
+     margin: 25px;
+ }
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+ h2.heading{
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+label.l{
+    font-size: 18px;
+    font-family: sans-serif;
+    display: inline-block;
+    padding: 0%;
+    margin-bottom: 2px;
+}
+
+.l.p, .l.l{
+    margin-top: 10px;
+}
+
+.saveemp, .cancelemp{
+    margin-top: 30px;
+    padding: 7px 50px;
+    border-radius: 5px;
+    color: white;
+    background-color:dodgerblue;
+    margin-bottom: 30px;
+    
+}
+.saveemp:hover, .cancelemp:hover{
+    cursor: pointer;
+    background-color: blue;
+}
+.cancelemp{
+    margin-left: 30px;
+}
+
+ .saveStatus > div{
+
+    border: 0.5px solid black;
+    border-radius: 10px;
+    background-color: white;
+    color: dodgerblue;
+    min-width: 150px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.saveStatus{
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: bottom 0.5s, opacity 0.5s;
+}
+
+.saveStatus.show{
+    bottom: 65px;
+    opacity: 1.0;
+
+    pointer-events: all;
+} 
+
+.nav-link{
+    color: white;
+    font-size: 16px;
+}
+.loader {
+    margin:auto;
+    margin-top: 20px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+.loadbeforedata{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin-top: 20px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 3px;
+    border: 0.1px solid black;
+    font-size: larger;
+    font-weight: bolder;
+}
+.loadbeforedata.displayed{
+    display: none;
+}
+
+.loader.displayed{
+    display: none;
+}
+
+#logout:hover{
+    cursor: pointer;
+}
+
+#editEmpImage{
+    display: none;
+}
+
+#servererror{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+
+
+#managerImage{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+#managerImage:hover{
+    cursor: pointer;
+}
+
+#navbarSupportedContent{
+    margin-bottom: 0px;
+}
+
+.navbar{
+    padding: 0px 0px !important;
+    min-height: 55px;
+}
+

@@ -1,0 +1,155 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    line-height: 22px;
+}
+
+div.container{
+    background-color: aliceblue;
+    width: 500px;
+    height: 430px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 30px;
+    padding: 15px 0px 10px 80px;
+    margin-bottom: 25px;
+
+    -webkit-box-shadow: 5px 0px 14px 0px rgba(52, 50, 50, 0.75);
+    -moz-box-shadow:    5px 0px 14px 0px rgba(52, 50, 50, 0.75);
+    box-shadow:         5px 0px 14px 0px rgba(52, 50, 50, 0.75);
+
+ }
+
+label.l{
+    font-size: 20px;
+    font-family: sans-serif;
+    display: inline-block;
+    padding: 0%;
+    margin-bottom: 6px;
+}
+
+.l.p, .l.l{
+    margin-top: 10px;
+}
+
+input, select{
+    font-size: 15px;
+}
+
+input[type=text], input[type=password]{
+    padding: 7px;
+    width: 65%;
+}
+#role{
+    padding: 7px 100px 7px 5px;
+}
+.uname, .pwd, #role{
+    margin: 0%;
+    border-radius: 5px;
+}
+
+.loginbtn, .resetbtn{
+    margin-top: 20px;
+    padding: 7px 50px;
+    border-radius: 5px;
+    color: white;
+    background-color:dodgerblue;
+    
+}
+.loginbtn:hover, .resetbtn:hover{
+    cursor: pointer;
+    background-color: blue;
+}
+.resetbtn{
+    margin-left: 30px;
+}
+h2.heading{
+    text-decoration: underline;
+}
+
+#fpwd{
+    display: block;
+    margin-top: 10px;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    color: black;
+}
+
+#cmacc{
+    font-size: 18px;
+    text-decoration: underline;
+    color: black;
+}
+
+#cmacc:hover{
+    cursor: pointer;
+    color: blue;
+}
+
+#fpwd:hover{
+    cursor: pointer;
+    color: blue;
+}
+
+.container i {
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.navbar-brand{
+    float: left;
+}
+.verifyCredentials{
+    margin: 0%;
+    padding: 0%;
+    color: red;
+    font-size: large;
+    display: none;
+}
+.verifyCredentials.notValid{
+    display: contents;
+}
+
+.loadingGif{
+    display: none;
+}
+.loading{
+    position: relative;
+}
+div.container.hide{
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+}
+.loadingGif.display{
+    display: block;
+    width: 7%;
+    position: absolute;
+    margin-top: 160px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; 
+}
+
+#servererror{
+    position: relative;
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+div.container.remove{
+    display: none;
+}
+.navbar{
+    padding: 0px;
+    margin: 0px;
+    height: 55px;
+}

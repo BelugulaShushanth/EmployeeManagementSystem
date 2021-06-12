@@ -1,0 +1,245 @@
+#searchGroup{
+    margin-top: 15px;
+    /* float: right !important;
+    clear: both; */
+}
+.input-group{
+    margin-top: 15px;
+    margin-right: auto;
+    width: 30%;
+} 
+
+.row{
+    margin-top: 5px;
+}
+
+.row.first{
+    margin-top: 10px;
+    padding: 0%;
+    background-color: lightgray;
+}
+
+.row:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.col{
+    margin: 0%;
+    margin-right: 2px;
+    padding: 0%;
+   
+    margin-left: 0%;
+    display: flex;
+    justify-content: left;
+}
+
+
+.container{
+    background-color: #fff;
+    width: 100%;
+}
+
+.image3{
+    width: 20px;
+    height: 15px;
+}
+
+.image3:hover{
+    cursor: pointer;
+    background-color: lightgray;
+    border-radius: 6px;
+}
+
+.dropdownul{
+    list-style-type: none;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    border: 0.1px solid lightslategrey;
+}
+
+.dropdown1 {
+    position: relative;
+    display: inline-block;
+}
+.dropdownli{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    font-weight: 500;
+    padding: 2px 0px 2px 7px;
+}
+
+.dropdownli:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+  
+.dropdowncontent1 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown1:hover .dropdowncontent1 {
+    display: block;
+  }
+
+#employeeId{
+    color: dodgerblue;
+}
+
+.ddlink{
+    text-decoration: none;
+    color: black;
+}
+.ddlink:hover{
+    text-decoration: none;
+    color: black;
+}
+#deleteemp{
+    padding-bottom: 0px ;
+    margin-bottom: 0px;
+}
+#deleteemp:hover{
+    cursor: pointer;
+}
+
+.delStatus > div{
+
+    border: 0.5px solid black;
+    border-radius: 10px;
+    background-color: white;
+    color: dodgerblue;
+    min-width: 150px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delStatus{
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+
+    opacity: 1;
+    pointer-events: none;
+
+    transition: bottom 0.5s, opacity 0.5s;
+}
+
+.delStatus.show{
+    bottom: 100px;
+    opacity: 1.0;
+
+    pointer-events: all;
+}
+
+.servererror{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.loader {
+    margin:auto;
+    margin-top: 20px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+.loadbeforedata{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin-top: 20px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 3px;
+    border: 0.1px solid black;
+    font-size: larger;
+    font-weight: bolder;
+}
+.loadbeforedata.displayed{
+    display: none;
+}
+
+.loader.displayed{
+    display: none;
+}
+#logout:hover{
+    cursor: pointer;
+}
+
+#dashboard:hover{
+    border-bottom: 1px solid white;
+}
+
+#managerImage{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+#managerImage:hover{
+    cursor: pointer;
+}
+
+#navbarSupportedContent{
+    margin-bottom: 0px;
+}
+
+.navbar{
+    padding: 0px 0px !important;
+    min-height: 55px;
+}
+
+.empstatus{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+.row, .row.first{
+    padding-left: 5px;
+}

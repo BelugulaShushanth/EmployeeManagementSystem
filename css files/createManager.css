@@ -1,0 +1,84 @@
+div.container{
+    background-color: white;
+    position: relative;
+    width: auto;
+    height: auto;
+    max-height: 10%;
+    border: 1px solid black;
+    margin: auto;
+   
+
+    -webkit-box-shadow: 5px 0px 14px 0px rgba(52, 50, 50, 0.75);
+    -moz-box-shadow:    5px 0px 14px 0px rgba(52, 50, 50, 0.75);
+    box-shadow:         5px 0px 14px 0px rgba(52, 50, 50, 0.75);
+
+ }
+ .managerform{
+    margin: 5px;
+}
+.form-control{
+    width: 50%;
+    margin: auto;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+ -webkit-appearance: none; 
+ margin: 0; 
+}
+
+h2.heading{
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.btn{
+    width: 100%;
+}
+label.l{
+    font-size: 18px;
+    font-family: sans-serif;
+    padding: 0%;
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loadingGif{
+    display: none;
+}
+.loading{
+    position: relative;
+}
+div.container.hide{
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+}
+.loadingGif.display{
+    display: block;
+    width: 7%;
+    position: absolute;
+    margin-top: 160px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; 
+}
+
+#servererror{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+div.container.remove{
+    display: none;
+}

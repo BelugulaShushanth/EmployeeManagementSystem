@@ -1,0 +1,91 @@
+#welcomeTag{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+    color: dodgerblue;
+}
+
+#managerImage{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+#managerImage:hover{
+    cursor: pointer;
+}
+
+#navbarSupportedContent{
+    margin-bottom: 0px;
+}
+
+.navbar{
+    padding: 0px 0px !important;
+    min-height: 55px;
+}
+
+
+.row{
+    width: 100%;
+}
+
+ #piechart, #piechart1{
+    border: 0.1px solid gray;
+    margin: auto;
+    max-width: 450px;
+    -webkit-box-shadow: 1px 0px 8px 0px rgba(52, 50, 50, 0.75);
+    -moz-box-shadow:    1px 0px 8px 0px rgba(52, 50, 50, 0.75);
+    box-shadow:         1px 0px 8px 0px rgba(52, 50, 50, 0.75);
+
+ }
+
+ .chartName{
+     color:navy;
+     text-align: center;
+     text-decoration: underline;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+
+ .loader {
+    margin:auto;
+    margin-top: 20px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+.loadbeforedata{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin-top: 20px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 3px;
+    border: 0.1px solid black;
+    font-size: larger;
+    font-weight: bolder;
+}
+.loadbeforedata.displayed{
+    display: none;
+}
+
+.loader.displayed{
+    display: none;
+}

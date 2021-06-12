@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Employees</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css files/footerandheader.css">
+    <link rel="stylesheet" href="css files/viewTasks.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0 fixed-top">
+      <a class="navbar-brand" href="#"><b>Employee Managment System</b></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/ManagerDashboard.html">Dashboard <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/AddEmpForm.html">Add Employee<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/ViewEmployees.html">View Employees<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <label class="nav-link" id="logout">Logout<img src="icons/logout_white_24dp.svg"><span class="sr-only">(current)</span></label>
+          </li>
+          <li class="nav-item active">
+            <img id="managerImage" src="">
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </header>
+
+  <br><br>
+    <div id="loading">
+      <center><label class="loadbeforedata" id="loadbeforedata">LOADING</label></center>
+      <div class="loader" id="loader">
+
+      </div>
+    </div>
+    </div>
+
+    <div id="taskstatusId">
+    </div>
+
+    <div id="servererrorId">
+    </div>
+
+    <div class="loading">
+      <img class="loadingGif" id="loadingGifId" src="./icons/loading2.gif">
+  </div>
+
+    <!-- <div class="input-group">
+        <div class="form-outline">
+          <input type="search" id="form1" class="form-control" />
+          <label class="form-label" for="form1">Search</label>
+        </div>
+        <button type="button" class="btn btn-primary">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div> -->
+    <div class="container" id="containerId">
+      <button type="button" id="addTask" class="btn btn-primary btn-lg text-right" data-toggle="modal" data-target="#myModal">Add Task</button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="" role="alert" id="alertStatus">
+               
+            </div>
+            <div class="modal-header">
+              <label class="modal-title"><b style="font-size: larger;">Add Task</b></label>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body"> 
+              <form id="addTaskForm" method="POST">
+              <div class="row-cols-2">
+
+                <div class="col">
+                  <div class="input-group mb-3 input-group-sm">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">Title</span>
+                    </div>
+                    <input type="text" class="form-control w-25" id="taskTitle" required>
+                  </div>
+                </div>
+
+              </div>
+              <div class="row-cols-2">
+                <div class="col">
+              <div class="input-group mb-3 input-group-sm">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Expected Start Date</span>
+                </div>
+                <input type="date" class="form-control w-25" id="expectedStartDate" required>
+              </div>
+              </div>
+              </div>
+              <div class="row-cols-2">
+                <div class="col">
+              <div class="input-group mb-3 input-group-sm">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Expected End Date</span>
+                </div>
+                <input type="date" class="form-control w-25" id="expectedEndDate" required>
+              </div>
+              </div>
+              </div>
+              
+              <textarea class="form-control z-depth-1" rows="3" placeholder="Description" id="description" required></textarea>
+              <br>
+              <textarea class="form-control z-depth-1" rows="3" placeholder="Comments" id="comments"></textarea>
+                <button type="submit" id="addTaskbtn" class="btn  btn-primary" value="Add Task" >Add Task</button>
+                <button type="button" id="closeTaskbtn" class="btn  btn-primary" data-dismiss="modal" value="Close">Back</button>
+              </form>
+              </div>
+          </div>
+          </div>
+      </div>
+      
+    </div>
+    
+    <br>
+    
+    
+  <br><br>  <footer class="bg-light text-center text-lg-start">
+      <div class="text-center fixed-bottom p-3">
+        © 2021 Copyright:
+        <a id="footer1" href="loginpage.html"> EmployeeManagmentSystem.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    
+<script src="./javascript/ServerDetails.js"></script>  
+<script src="./javascript/viewTasks.js"></script>
+<script src="./javascript/addTask.js"></script>
+<script src="./javascript/sessionclear.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

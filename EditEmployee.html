@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Employee</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css files/editEmployee.css"></link>
+    <link rel="stylesheet" href="./css files/footerandheader.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0 fixed-top">
+      <a class="navbar-brand" href="#"><b>Employee Managment System</b></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/ManagerDashboard.html">Dashboard <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/AddEmpForm.html">Add Employee<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/ViewEmployees.html">View Employees<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <label class="nav-link" id="logout">Logout<img src="icons/logout_white_24dp.svg"><span class="sr-only">(current)</span></label>
+          </li>
+          <li class="nav-item active">
+            <img id="managerImage" src="">
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </header>
+
+    <br><br>
+    <div id="loading">
+      <center><label class="loadbeforedata" id="loadbeforedata">LOADING</label></center>
+      <div class="loader" id="loader">
+  
+      </div>
+    </div>
+  
+    <div class="servererror">
+      <label id="servererror"></label>
+    </div>
+
+    <div class="container" id="containerid">
+      <h2 class="heading">Edit Employee Form</h2>
+    <form class="empform" id="empFormSubmit" method="POST">
+
+      <div class="row">
+
+      <div class="col">
+      <label class="l"> Enter Your Employee First Name:</label><br>
+      <input type="text" id="empFname" placeholder="Employee First Name" required><br>
+      <label class="l"> Enter Your Employee Last Name:</label><br>
+      <input type="text" id="empLname" placeholder="Employee Last Name" required><br>
+      <label class="l"> Enter Your Employee Date Of Birth:</label><br>
+      <input type="date" id="empDob" placeholder="Employee DOB" required><br>
+      <label class="l"> Select Gender:</label><br>
+      <select  id="empGender" required>
+        <option value="" >--Select--</option>
+        <option class="o" value="male">Male</option>
+        <option class="o" value="female">Female</option>
+        <option class="o" value="other">Other</option>
+      </select>
+      <br><label class="l"> Enter Your Employee Phone Number:</label><br>
+      <input type="tel" id="empPhNo" placeholder="Phone number" required><br>
+      <label class="l"> Enter Your Employee E-mail Id:</label><br>
+      <input type="email" id="empEmailId" placeholder="Email Id"><br>
+      </div>
+
+      <div class="col">
+        <label class="l"> Enter Your Employee Address:</label><br>
+        <textarea class="l" id="empAddress" cols="30" rows="2" placeholder="Employee Address" required></textarea>
+        <label class="l"> Enter Your Employee Project Name:</label><br>
+        <input type="text" id="empProjectName" placeholder="Project Name"><br>
+        <label class="l"> Enter Your Employee Skill Level:</label><br>
+      <input type="text" id="empSkillLevel" placeholder="Employee Skill Level" required><br>
+      <label class="l"> Enter Your Employee Salary(in INR):</label><br>
+      <input type="text" id="empSalary" placeholder="Employee Salary" required><br>
+    </div>
+      </div>
+      <div class="row">
+
+        <div class="col">
+        <input type="submit" value="SAVE" class="saveemp">
+        <input type="button" value="CANCEL" class="cancelemp">
+        <br>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="saveStatus" id="saveSuccess">
+            <div id="text"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </form>
+    </div>
+
+
+    <footer class="bg-light fixed-bottom text-center text-lg-start">
+    
+      <div class="text-center p-3">
+        © 2021 Copyright:
+        <a id="footer1" href="loginpage.html"> EmployeeManagmentSystem.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+<script src="./javascript/ServerDetails.js"></script>
+<script src="./javascript/EditEmployee.js"></script>
+<script src="./javascript/sessionclear.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css files/footerandheader.css">
+    <link rel="stylesheet" href="./css files/ManagerDashboard.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0 fixed-top">
+      <a class="navbar-brand" href="#"><b>Employee Managment System</b></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/ManagerDashboard.html">Dashboard <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/AddEmpForm.html">Add Employee<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/ViewEmployees.html">View Employees<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <label class="nav-link" id="logout">Logout<img src="icons/logout_white_24dp.svg"><span class="sr-only">(current)</span></label>
+          </li>
+          <li class="nav-item active">
+            <img id="managerImage" src="">
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </header>
+
+    
+    <!-- <div id="loading">
+      <center><label class="loadbeforedata" id="loadbeforedata">LOADING</label></center>
+      <div class="loader" id="loader">
+
+      </div>
+    </div> 
+      
+    </div> -->
+    <br><br>
+    <div id="loading">
+      <center><label class="loadbeforedata" id="loadbeforedata">LOADING</label></center>
+      <div class="loader" id="loader">
+
+      </div>
+    </div>
+    <div class="welcomeMessage">
+        <h4 id="welcomeTag"></h4>
+    </div>
+
+    <div class="servererror">
+      <label id="servererror"></label>
+    </div>
+      
+   
+    <div class="row align-content-md-center" id="chartRow">
+      <div class="col" id="chartCol">
+        <h4 class="chartName">Employee Pie Chart</h4>
+        <div id="piechart">
+          <label>Total No Of Employess:</label>
+        </div>
+      </div>
+      <div class="col"  id="chartCol">
+        <h4 class="chartName">Task Pie Chart</h4>
+        <div id="piechart1"></div>
+      </div>
+    </div>
+    
+
+    
+  <br><br>  <footer class="bg-light text-center text-lg-start">
+      <div class="text-center fixed-bottom p-3">
+        © 2021 Copyright:
+        <a id="footer1" href="loginpage.html"> EmployeeManagmentSystem.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    
+
+<script src="./javascript/ServerDetails.js"></script>  
+<script src="./javascript/sessionclear.js"></script>
+<script src="./javascript/ManagerDashboard.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

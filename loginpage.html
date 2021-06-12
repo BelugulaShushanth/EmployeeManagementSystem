@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Managment System Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./css files/loginstyle.css"></link>
+    <link rel="stylesheet" href="./css files/footerandheader.css">
+</head>
+<body>
+
+    <header>
+    <nav class="navbar fixed-top navbar-dark bg-dark">
+        <a id="npagename" href="loginpage.html"><b>Employee Managment System</b></a>
+      </nav>
+    </header>
+
+
+    <div class="servererror">
+      <label id="servererror"></label>
+    </div>
+
+   
+    <div class="loading">
+        <img class="loadingGif" id="loadingGifId" src="./icons/loading2.gif">
+    </div>
+
+
+    <div class="container" id="containerid">
+        <form id="verifyLogin">
+            <h2 class="heading">Login To Your Account</h2>
+      <label class="verifyCredentials" id="verifyCredentialsId">Please enter valid credentials</label><br>
+       <label class="l"> Enter Your User Name:</label><br>
+       <input type="text" class="uname" id="username" placeholder="Username" required><br>
+       <label class="l p"> Enter Your Password:</label><br>
+       <input type="password" class="pwd" id="password" placeholder="Password" required>
+       <i class="bi bi-eye-slash" id="togglePassword"></i>
+       <br>
+       <label class="l l"> Login as</label>
+       <select id="role" required>
+        <option value="">--Select--</option>
+        <option value="Employee">Employee</option>
+        <option value="Manager">Manager</option>
+        <option value="Admin">Admin</option>
+       </select><br>
+       <input type="submit" class="loginbtn" value="LOGIN">
+       <input type="reset" class="resetbtn" value="RESET">
+       <br><a href="#" id="fpwd">forgot your password?</a>
+       <a href="/CreateManagerAcc.html" id="cmacc">Create Manager Account</a>
+    </form>
+    </div>
+    
+
+    <footer class="bg-light fixed-bottom text-center text-lg-start">
+    
+        <div class="text-center p-3">
+          © 2021 Copyright:
+          <a id="footer1" href="loginpage.html"> EmployeeManagmentSystem.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+<script src="./javascript/ServerDetails.js"></script>  
+<script src="./javascript/verifyLogin.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+#welcomeTag{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+    color: dodgerblue;
+}
+
+#employeeImage{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+#employeeImage:hover{
+    cursor: pointer;
+}
+
+#navbarSupportedContent{
+    margin-bottom: 0px;
+}
+
+.navbar{
+    padding: 0px 0px !important;
+    min-height: 55px;
+}
+
+
+.row{
+    width: 100%;
+}
+
+ #piechart, #piechart1{
+    border: 0.1px solid gray;
+    margin: auto;
+    max-width: 450px;
+    -webkit-box-shadow: 1px 0px 8px 0px rgba(52, 50, 50, 0.75);
+    -moz-box-shadow:    1px 0px 8px 0px rgba(52, 50, 50, 0.75);
+    box-shadow:         1px 0px 8px 0px rgba(52, 50, 50, 0.75);
+
+ }
+
+ .chartName{
+     color:navy;
+     display: flex;
+     text-align: center;
+     text-decoration: underline;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+
+ #chartNameId{
+     background-color: white;
+     color:navy;
+     display: flex;
+     text-align: center;
+     align-content: center;
+     justify-content: center;
+     text-decoration: underline;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
