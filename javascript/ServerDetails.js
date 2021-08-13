@@ -1,5 +1,5 @@
 serverDetails ={
-    frontEndUrl : 'https://employee-management-system-v1.herokuapp.com', 
-    backEndUrl : 'https://java-mail-service.herokuapp.com' ,
+    frontEndUrl : 'https://belugulashushanth.github.io/EmployeeManagementSystem', 
+    backEndUrl : 'https://employee-management-system-v1.herokuapp.com' ,
     enabled : true
 }
