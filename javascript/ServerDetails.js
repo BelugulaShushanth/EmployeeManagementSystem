@@ -1,5 +1,5 @@
 serverDetails ={
     frontEndUrl : 'https://belugulashushanth.netlify.app', 
-    backEndUrl : 'https://ab68-2405-201-c017-ba3a-10d-de61-4e55-5138.in.ngrok.io' ,
+    backEndUrl : 'https://22d9-2405-201-c017-ba3a-81eb-917d-fd69-9ccb.in.ngrok.io' ,
     enabled : true
 }
